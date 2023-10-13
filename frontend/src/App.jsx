@@ -21,13 +21,12 @@ export default function Register() {
 
   const submitHandler = () => {
     const newUser = {
+      user: 'mohammadreza',
+      phone,
       email,
-      password,
-      username: 'mohamadreza',
-      name: 'mohammadreza',
-      family: 'mohammadreza',
+      pass:password,
     };
-    fetch("https://thlearn.iran.liara.run/api/v1/signup", {
+    fetch("https://Lovelcode.iwebdev.ir/API/Signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
